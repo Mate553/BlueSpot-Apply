@@ -19,5 +19,8 @@ Route::get('/users/create/{name}', [UserController::class, 'createuser']);
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/frontend', function () {
+    return view('task2');
+});
 Route::get('/swipeleft/userA={id}&userB={id2}',[SwipeController::class,'swipeleft']);
 Route::get('/swiperight/userA={id}&userB={id2}',[SwipeController::class,'swiperight']);
